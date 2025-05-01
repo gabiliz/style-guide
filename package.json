@@ -1,8 +1,16 @@
 {
-  "name": "style-guide",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@gabiliz/style-guide",
+  "version": "1.0.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -44,6 +52,7 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
     "vitest": "^3.1.1"
   },
   "eslintConfig": {

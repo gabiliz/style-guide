@@ -1,0 +1,32 @@
+# Ignora pastas de desenvolvimento e arquivos auxiliares
+node_modules
+src
+.storybook
+.vite
+.vscode
+dist/storybook
+
+# Arquivos de configuração que não precisam estar no pacote
+*.config.js
+*.config.ts
+tsconfig*.json
+vite.config.*
+storybook.*
+
+# Storybook e exemplos locais
+**/*.stories.tsx
+**/*.test.tsx
+**/*.spec.tsx
+coverage
+chromatic.config.*
+
+# Arquivos de ferramentas e testes
+playwright.config.*
+tests/
+__tests__/
+__mocks__/
+
+# Outros
+.env*
+*.log
+*.DS_Store

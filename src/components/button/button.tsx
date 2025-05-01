@@ -20,7 +20,6 @@ const button = tv({
       link: 'border-transparent bg-transparent text-blue-400 hover:text-blue-600 focus:text-gray-600',
       bordered:
         'border-blue-400 text-blue-400 hover:bg-blue-100 focus:border-blue-600 focus:ring-2 focus:ring-blue-600',
-
       unstyled:
         'border-none border-transparent bg-transparent p-0 text-gray-400 hover:text-gray-600 focus:text-gray-600',
     },
@@ -32,7 +31,7 @@ const button = tv({
       icon: 'h-6 w-6 p-0',
       'no-spacing': 'p-0',
     },
-    shape: { pill: 'rounded-pill', normal: 'rounded-sm' },
+    shape: { pill: 'rounded-[500px]', normal: 'rounded-sm' },
     disabled: {
       true: 'cursor-not-allowed border-gray-200 bg-gray-200 text-white hover:border-gray-200 hover:bg-gray-200 focus:border-gray-200 focus:bg-gray-200',
     },
@@ -59,7 +58,7 @@ const button = tv({
     {
       shape: 'pill',
       class:
-        'border-primary-200 bg-gray-0 text-2xs text-primary-400 border px-4 py-3 font-normal hover:text-white focus:text-white',
+        'border-blue-200 bg-gray-0 text-2xs text-blue-400 border px-4 py-3 font-normal hover:text-white focus:text-white',
     },
   ],
   defaultVariants: {
