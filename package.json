@@ -1,19 +1,19 @@
 {
   "name": "@gabiliz/style-guide",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
